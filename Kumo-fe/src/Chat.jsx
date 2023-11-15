@@ -19,7 +19,7 @@ export default function Chat() {
     connectToWs();
   }, [selectedUserId]);
   function connectToWs() {
-    const ws = new WebSocket("ws://localhost:9000");
+    const ws = new WebSocket("ws://https://vercel.com/hafiz-samaaes-projects/u09-kumo/6W7LhWKt7LmXRp64u69K4Tm74dJt");
     setWs(ws);
     ws.addEventListener("message", handleMessage);
     ws.addEventListener("close", () => {
