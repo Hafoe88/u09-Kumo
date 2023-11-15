@@ -22,7 +22,7 @@ app.use(cookieParser());
 
 app.use(cors({
   credentials: true,
-  origin: 'https://vercel.com/hafiz-samaaes-projects/u09-kumo/6W7LhWKt7LmXRp64u69K4Tm74dJt',
+  origin: 'http://localhost:5173',
   exposedHeaders: ['Access-Control-Allow-Origin']
 }));
 
@@ -45,7 +45,7 @@ async function getUserDataFromRequest(req) {
 
 // test
 app.use((req, res, next) => {
-  res.setHeader('Access-Control-Allow-Origin', 'https://vercel.com/hafiz-samaaes-projects/u09-kumo/6W7LhWKt7LmXRp64u69K4Tm74dJt');
+  res.setHeader('Access-Control-Allow-Origin', 'http://localhost:5173');
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
   res.setHeader('Access-Control-Allow-Credentials', true);
