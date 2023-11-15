@@ -6,7 +6,7 @@ export default function Logo() {
         <img src="/logo.png" alt="logo" className="mx-auto h-12 w-12" />
       </div>
       <div className="items-center flex">
-        <p>Nimbus</p>
+        <p>Kumo</p>
       </div>
     </div>
   );

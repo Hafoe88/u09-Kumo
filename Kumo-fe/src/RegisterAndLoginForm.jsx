@@ -55,7 +55,7 @@ export default function RegisterAndLoginForm() {
         )}
         {isLoginOrRegister === "login" && (
           <div className="text-center mt-2">
-            New to Nimbus?{" "}
+            New to Kumo?{" "}
             <button
               className="ml-1"
               onClick={() => setIsLoginOrRegister("register")}
