@@ -23,6 +23,7 @@ app.use(cookieParser());
 app.use(cors({
   credentials: true,
   origin: 'https://u09-kumo-fe.vercel.app',
+  methods: ['POST', 'GET'],
   exposedHeaders: ['Access-Control-Allow-Origin']
 }));
 
