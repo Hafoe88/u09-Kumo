@@ -18,7 +18,7 @@
       "headers": [
         {
           "key": "Access-Control-Allow-Origin",
-          "value": "https://u09-kumo-fe.vercel.app"
+          "value": "*"
         },
         {
           "key": "Access-Control-Allow-Methods",
