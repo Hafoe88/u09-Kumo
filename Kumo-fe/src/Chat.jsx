@@ -19,7 +19,7 @@ export default function Chat() {
     connectToWs();
   }, [selectedUserId]);
   function connectToWs() {
-    const ws = new WebSocket("ws://https://u09-kumo-be.vercel.app/profile");
+    const ws = new WebSocket("ws://https://u09-kumo-be.vercel.app/");
     setWs(ws);
     ws.addEventListener("message", handleMessage);
     ws.addEventListener("close", () => {
