@@ -1,6 +1,5 @@
 {
     "version": 2,
-    "name": "my-app",
     "builds": [
       {
         "src": "index.js",
@@ -10,26 +9,7 @@
     "routes": [
       {
         "src": "/(.*)",
-        "dest": "/index.js"
-      }
-    ],
-    "headers": [
-      {
-        "source": "/(.*)",
-        "headers": [
-          {
-            "key": "Access-Control-Allow-Origin",
-            "value": "https://u09-kumo-fe.vercel.app"
-          },
-          {
-            "key": "Access-Control-Allow-Methods",
-            "value": "GET,POST,PUT,DELETE,OPTIONS"
-          },
-          {
-            "key": "Access-Control-Allow-Headers",
-            "value": "X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method, Access-Control-Request-Headers"
-          }
-        ]
+        "dest": "/"
       }
     ]
   }
