@@ -22,7 +22,7 @@ app.use(cookieParser());
 
 app.use(cors({
   credentials: true,
-  origin: 'https://u09-kumo-fe.vercel.app',
+  origin: 'https://u09-kumo-fe.vercel.app/',
   exposedHeaders: ['Access-Control-Allow-Origin']
 }));
 
@@ -45,7 +45,7 @@ async function getUserDataFromRequest(req) {
 
 // test
 app.use((req, res, next) => {
-  res.setHeader('Access-Control-Allow-Origin', '*');
+  res.setHeader('Access-Control-Allow-Origin', 'https://u09-kumo-fe.vercel.app/');
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
   res.setHeader('Access-Control-Allow-Credentials', true);
